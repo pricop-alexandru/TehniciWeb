@@ -1,0 +1,17 @@
+{
+    "cale_baza": "/images/errors",
+    "eroare_default": {
+        "titlu": "Something went wrong",
+        "text": "We're having trouble processing your request.",
+        "imagine": "default_error.png"
+    },
+    "info_erori": [
+        {
+            "identificator": 404,
+            "status": true,
+            "titlu": "Page Not Found",
+            "text": "The page you are looking for might have been removed.",
+            "imagine": "404_error.png"
+        }
+    ]
+}

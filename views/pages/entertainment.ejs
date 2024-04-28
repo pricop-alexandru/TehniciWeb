@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../fragments/head') %>
+</head>
+<body>
+<%- include('../fragments/header') %>
+<main>
+    <section id="entertainment">
+        <h2>Entertainment</h2>
+        <figure>
+            <picture>
+                <source media="(min-width: 650px)" srcset="Resources/cat_photo_big.jpg">
+                <source media="(min-width: 465px)" srcset="Resources/cat_photo_medium.jpg">
+                <img src="/Resources/cat_photo_small.jpg" alt="Funny picture of a cat">
+            </picture>
+            <figcaption>Cute picture of a cat.</figcaption>
+        </figure>
+        <p>Discover the latest in <strong>funny</strong> and <em>humor</em> with our community-driven content.</p>
+        <a href="/Resources/cat_photo_small.jpg" download="Cat.pdf">Download PDF</a>
+        <details>
+            <summary>Can I submit a joke?</summary>
+            <p>Student Insider is open to submission, via email, you can find it at the bottom of the page.</p>
+        </details>
+        <article>
+            <h3>Joke Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+    </section>
+</main>
+<%- include ('../fragments/footer') %>
+</body>
+</html>

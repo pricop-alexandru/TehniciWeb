@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../fragments/head') %>
+</head>
+<body>
+<%- include('../fragments/header') %>
+<main>
+    <section id="news">
+        <h2>News</h2>
+        <p>Stay updated with the latest in <strong>politics</strong>, <em>dramas</em>, and industry insights.</p>
+        <form action="#" method="get">
+            <input type="search" placeholder="Search news...">
+            <button type="submit">Search</button>
+        </form>
+        <div class="container-iframe">
+            <div class="taburi-iframe">
+                <a href="https://www.youtube.com/embed/B-ytMSuwbf8?si=5VP2oMYLLG0JmBry" target="ifr-video">First</a>
+                <a href="https://www.youtube.com/embed/3C_22eBWpjg?si=66DJDWKlrG37FmZE" target="ifr-video">Second</a>
+            </div>
+            <div class="video-responsive">
+                <iframe name="ifr-video" src="https://www.youtube.com/embed/B-ytMSuwbf8?si=5VP2oMYLLG0JmBry" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <article>
+            <h3>Article Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+    </section>
+</main>
+<%- include ('../fragments/footer') %>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<footer>
+    <address>
+        <a href="tel:+1234567890">Call Us: +1234567890</a><br>
+        <a href="mailto:alex.pricop203@gmail.com">Email us</a> for submissions and business inquiries.<br>
+        <a href="https://maps.app.goo.gl/n5FKbBBr5MZahBPA7" target="_blank">Find us on the Map</a><br>
+        <a href="https://api.whatsapp.com/send?phone=0737405577">Chat on WhatsApp</a>
+    </address>
+    <small>&copy; 2024 Student Insider. All rights reserved.</small>
+    <time datetime="2024-03-21">March 21, 2024</time>
+    <a href="#top" id="link-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script>
+        window.onscroll = function() {
+            var linkTop = document.getElementById("link-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                linkTop.classList.add("visible");
+            } else {
+                linkTop.classList.remove("visible");
+            }
+        };
+        
+        document.getElementById("link-top").addEventListener("click", function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        </script>
+</footer>

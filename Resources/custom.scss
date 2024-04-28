@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$theme-colors: (
+  "primary": #ff0000,
+  "secondary": #00ff00
+);
+
+$enable-responsive-font-sizes: true;
+
+$grid-breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+$border-radius: 5px;
+
+$font-size-base: 16px;
+
+$font-family-base: "Arial", sans-serif;
