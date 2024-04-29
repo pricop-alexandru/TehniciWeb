@@ -1,8 +1,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 $theme-colors: (
-  "primary": #ff0000,
-  "secondary": #00ff00
+  "primary": #0a6c74,
+  "secondary": #9eaab5
 );
 
 $enable-responsive-font-sizes: true;
@@ -19,3 +19,46 @@ $border-radius: 5px;
 $font-size-base: 16px;
 
 $font-family-base: "Arial", sans-serif;
+
+// duotone
+$base-color: $theme-colors[primary];
+
+$duotone-color: mix($theme-colors[secondary], $base-color, 50%);
+
+.link-top:hover {
+  background-color: $duotone-color;
+}
+
+// reflexie
+.image-grid {
+  width: 50%;
+  height: 200px;
+  background-color: $theme-colors[primary];
+  box-shadow: 0 0 10px 5px rgba($theme-colors[primary], 0.3);
+}
+
+//plimbare eterna pe orizontala
+.footer {
+  width: 50%;
+  height: 100px;
+  background-color: $theme-colors[primary]
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  animation: move-copyright 5s linear infinite;
+}
+
+@keyframes move-copyright {
+  0% {
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(100%);
+  }
+}

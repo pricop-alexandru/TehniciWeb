@@ -52,6 +52,7 @@ nav {
     right: 0;
     width: 100%;
     background-color: var(--primary-color);
+    z-index: 10;
 }
 
 .introducere > li {
@@ -368,11 +369,10 @@ thead, tbody tr {
     justify-content: space-between;
     border: 3px solid #ccc;
     box-sizing: border-box;
-    /* max-width: 100%; */
 }
   
 .image-grid img {
-  max-width: 70%;
+  max-width: 60%;
 }
 
 .sort-vertical {
