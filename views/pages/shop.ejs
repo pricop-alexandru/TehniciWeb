@@ -2,21 +2,90 @@
 <html lang="en">
 <head>
     <%- include('../fragments/head') %>
+<style>
+        div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 35%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 70%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 </head>
 <body>
 <%- include('../fragments/header') %>
 <main>
-    <div class="sort-vertical">
-        <h1>Shop Gallery</h1>
-        <p>This is some text on top of the gallery.</p>
-        <div class="gallery-text">
-        </div>
-        <div class="image-grid">
-            <img src="../Resources/merch1.png" alt="Image 1">
-            <img src="../Resources/merch2.png" alt="Image 2">
-            <img src="../Resources/merch3.png" alt="Image 3">
-        </div>
-    </div>
+    <h2>Responsive Image Gallery</h2>
+
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Resources/merch1.png">
+      <img src="Resources/merch1.png" alt="Merch 1" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Resources/merch2.png">
+      <img src="Resources/merch2.png" alt="Merch 2" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Resources/merch3.png">
+      <img src="Resources/merch3.png" alt="Merch 3" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
 </main>
 <%- include ('../fragments/footer') %>
 </body>

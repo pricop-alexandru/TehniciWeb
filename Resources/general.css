@@ -353,30 +353,3 @@ thead, tbody tr {
     visibility: visible;
 }
 
-.gallery-text {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-}
-
-.image-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border: 3px solid #ccc;
-    box-sizing: border-box;
-}
-  
-.image-grid img {
-  max-width: 60%;
-}
-
-.sort-vertical {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
